@@ -81,7 +81,7 @@ public class TeaRESTApplication_LogAuditData_Tests {
             nodeSpy.evaluate(inputMessageAssembly, true, "in");
 
             // Assert the terminal propagate count for the message
-            assertThat(nodeSpy, terminalPropagateCountIs("out", 1));
+            assertThat(nodeSpy, terminalPropagateCountIs("out", 2));
 
             /* Compare Output Message 1 at output terminal out */
             TestMessageAssembly actualMessageAssembly = nodeSpy.propagatedMessageAssembly("out", 1);
